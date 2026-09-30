@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯"
+            android:textSize="52sp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogo de Adivinhação"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tente descobrir o número secreto!"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do jogador"
+            android:inputType="textPersonName"
+            android:padding="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha o limite:"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupLimite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 até 10"
+                android:tag="10"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 até 50"
+                android:tag="50"
+                android:textSize="16sp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 até 100"
+                android:tag="100"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnJogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JOGAR"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:padding="14dp" />
+
+    </LinearLayout>
+</ScrollView>
